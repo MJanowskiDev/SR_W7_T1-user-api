@@ -1,9 +1,9 @@
 import './App.css';
-
+import Users from 'containers/Users'
 function App() {
   return (
     <div className="App">
-      <h1>USERS - API</h1>
+      <Users />
     </div>
   );
 }
