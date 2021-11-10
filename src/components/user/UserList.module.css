@@ -8,3 +8,8 @@ background-color: white;
 padding: 6px;
 
 }
+
+.UserList > a{
+    text-decoration: none;
+    color: inherit;
+}
