@@ -1,0 +1,16 @@
+
+.CustomLink{
+    border: 1px solid #001158;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    color: '#001158';
+    transition: background-color .6s;
+}
+
+.CustomLink:hover {
+    background-color: #0055ff2e;
+  }

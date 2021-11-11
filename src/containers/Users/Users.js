@@ -5,7 +5,7 @@ const Users = ({ usersData, loading, usersCount }) => {
 	return (
 		<div className={classes.Users}>
 			<h1>All users:</h1>
-			<UserList loading data={usersData} loading={loading} usersCount={usersCount} />
+			<UserList data={usersData} loading={loading} usersCount={usersCount} />
 		</div>
 	);
 };

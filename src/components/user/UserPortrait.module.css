@@ -1,0 +1,9 @@
+.Portrait{
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.Portrait img{
+    border-radius: 50%;
+}

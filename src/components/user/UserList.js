@@ -2,7 +2,7 @@ import User from './User';
 import { Link } from 'react-router-dom';
 
 import classes from './UserList.module.css';
-import UserPlaceholder from './UserPlaceholder';
+import { UserPlaceholder } from 'components/ui';
 
 const UserList = ({ data, loading, usersCount }) => {
 	if (!loading && (!data || data.length === 0)) {

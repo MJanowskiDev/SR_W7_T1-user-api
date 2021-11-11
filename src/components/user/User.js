@@ -1,12 +1,17 @@
 import classes from './User.module.css';
-import { checkIfValueIsOk as checkIfOk } from 'utils/user-utils';
+import { checkIfValueIsOk as checkIfOk, humanizeDate } from 'utils/user-utils';
+
+import UserPortrait from './UserPortrait';
 
 const User = ({ user }) => {
 	return (
 		<div className={classes.User}>
-			<div className={classes.Portrait}>
-				<img src={user.picture.large} alt={`${user.name.first} ${user.name.last}`} width={128} height={128} />
-			</div>
+			<UserPortrait
+				picture={user.picture.large}
+				alt={`${user.name.first} ${user.name.last}`}
+				width={128}
+				height={128}
+			/>
 
 			<h1>
 				{checkIfOk(user.name.first)} {checkIfOk(user.name.last)}
@@ -22,11 +27,7 @@ const User = ({ user }) => {
 			</p>
 			<p>
 				<span>Register date: </span>
-				{new Date(user.registered.date).toLocaleString('en-US', {
-					year: 'numeric',
-					month: 'long',
-					day: 'numeric'
-				})}
+				{humanizeDate(user.registered.date)}
 			</p>
 		</div>
 	);

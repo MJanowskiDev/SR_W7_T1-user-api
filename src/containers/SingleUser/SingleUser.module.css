@@ -1,0 +1,23 @@
+
+
+.SingleUser{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Content{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #001158;
+    border-radius: 6px;
+    padding: 18px;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}

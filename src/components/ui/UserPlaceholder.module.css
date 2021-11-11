@@ -1,12 +1,12 @@
 
 .UserPlaceholder{
-    width: 300px;
-    height: 350px;
+    width: 350px;
+    height: 400px;
     text-align: start;
     margin: 6px;
     padding: 18px;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #001158;
     border-radius:6px;
 }
 

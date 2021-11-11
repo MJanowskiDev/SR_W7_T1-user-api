@@ -1,0 +1,29 @@
+
+
+.UserDetailsContainer{
+    width: 350px;
+    height: 500px;
+    text-align: start;
+    padding: 18px;
+    border-radius:6px;
+}
+
+.AddressParagraph{
+    height: 50px;
+}
+
+.UserDetailsContainer p{
+    margin-block-end: 0.5em;
+    margin-block-start: 0.5em;
+}
+
+.UserDetailsContainer span{
+    font-weight: 700;
+}
+
+.UserDetailsContainer h1{
+    text-align: center;
+    font-size: 1.8em;
+    color:#001158;
+}
+

@@ -1,19 +1,21 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
+
 let DefaultIcon = L.icon({
 	...L.Icon.Default.prototype.options,
 	iconUrl: icon,
 	iconRetinaUrl: iconRetina,
 	shadowUrl: iconShadow
 });
+
 L.Marker.prototype.options.icon = DefaultIcon;
 
-const Map = ({ position }) => {
+const Map = ({ position, street, city, country }) => {
 	return (
 		<MapContainer
 			style={{ width: '500px', height: '500px', borderRadius: 6 }}
@@ -27,8 +29,15 @@ const Map = ({ position }) => {
 			/>
 			<Marker position={position}>
 				<Popup>
-					<p>Longitude: {position[0]}</p>
-					<p>Lattitude: {position[1]}</p>
+					<p>
+						<strong>Address:</strong>
+						<br />
+						{street}
+						<br />
+						{city}
+						<br />
+						{country}
+					</p>
 				</Popup>
 			</Marker>
 		</MapContainer>

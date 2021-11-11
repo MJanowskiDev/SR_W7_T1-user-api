@@ -4,10 +4,10 @@ import { getUrl } from 'utils/user-utils';
 import './App.css';
 
 import Users from 'containers/Users';
-import UserDetail from 'containers/UserDetail';
+import SingleUser from 'containers/SingleUser';
 
-const usersCount = 10;
-const fetchDelay = 10; //ms
+const usersCount = 50;
+const fetchDelay = 1000; //ms
 
 function App() {
 	const [ usersData, setUsersData ] = useState([]);
@@ -51,7 +51,7 @@ function App() {
 					exact
 					element={<Users usersData={usersData} loading={loading} usersCount={usersCount} />}
 				/>
-				<Route path='/user/:id' element={<UserDetail />} />
+				<Route path='/user/:id' element={<SingleUser />} />
 			</Routes>
 		</Router>
 	);
