@@ -44,14 +44,10 @@ function App() {
 	if (error) return <p>{error}</p>;
 
 	return (
-		<Router>
+		<Router basename={process.env.PUBLIC_URL}>
 			<Routes>
-				<Route
-					path='/'
-					exact
-					element={<Users usersData={usersData} loading={loading} usersCount={usersCount} />}
-				/>
-				<Route path='/user/:id' element={<SingleUser />} />
+				<Route path="/" exact element={<Users usersData={usersData} loading={loading} usersCount={usersCount} />} />
+				<Route path="/user/:id" element={<SingleUser />} />
 			</Routes>
 		</Router>
 	);
