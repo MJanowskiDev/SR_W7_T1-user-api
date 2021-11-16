@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { UserDetails } from 'components/user';
 
@@ -9,6 +10,10 @@ import { Map } from 'components/Map';
 import classes from './SingleUser.module.css';
 const SingleUser = () => {
 	const location = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	if (!location.state) {
 		return (
