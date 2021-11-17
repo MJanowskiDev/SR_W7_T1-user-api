@@ -23,7 +23,18 @@
 		"deploy": "gh-pages -d build"
 	},
 	"eslintConfig": {
-		"extends": [ "react-app", "react-app/jest" ]
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
 	},
-	"browserslist": [ ">0.2%", "not dead", "not op_mini all" ]
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not op_mini all"
+	],
+	"devDependencies": {
+		"enzyme": "^3.11.0",
+		"enzyme-adapter-react-16": "^1.15.6"
+	}
 }
