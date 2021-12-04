@@ -7,7 +7,7 @@ import Users from 'containers/Users';
 import SingleUser from 'containers/SingleUser';
 
 const usersCount = 50;
-const fetchDelay = 1000; //ms
+const fetchDelay = 2000; //ms
 
 function App() {
 	const [ usersData, setUsersData ] = useState([]);
