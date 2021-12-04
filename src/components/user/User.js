@@ -17,7 +17,6 @@ const User = ({ user }) => {
 				{checkIfOk(user.name.first)} {checkIfOk(user.name.last)}
 			</h1>
 
-			<br />
 			<p className={classes.AddressParagraph}>
 				<span>Address:</span> {checkIfOk(user.location.street.name)} {checkIfOk(user.location.street.number)},{' '}
 				{checkIfOk(user.location.postcode)} {checkIfOk(user.location.city)} {checkIfOk(user.location.country)}

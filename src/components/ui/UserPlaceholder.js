@@ -8,14 +8,11 @@ const UserPlaceholder = () => {
 	const awesomePlaceholder = (
 		<div className={classes.UserPlaceholder}>
 			<div className={classes.UserPortrait}>
-				<RectShape color='lightgray' style={{ width: 128, height: 128, borderRadius: '50%' }} />
+				<RectShape color="lightgray" style={{ width: 128, height: 128, borderRadius: '50%' }} />
 			</div>
-			<br />
-			<TextBlock rows={1} color='gray' />
-			<br />
-			<br />
-			<br />
-			<TextBlock rows={4} color='gray' />
+
+			<TextBlock className={classes.UserRowsHeader} rows={1} color="gray" />
+			<TextBlock rows={4} color="gray" />
 		</div>
 	);
 

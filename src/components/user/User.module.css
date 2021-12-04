@@ -1,38 +1,37 @@
-
-.User{
-    width: 350px;
-    height: 400px;
-    text-align: start;
-    margin: 6px;
-    padding: 18px;
-    background-color: white;
-    border: 1px solid #001158;
-    border-radius:6px;
-    font-family: 'Roboto Condensed', sans-serif;
-    transition: background-color .6s;
-    overflow-y: auto;
+.User {
+	width: 350px;
+	height: 400px;
+	text-align: start;
+	margin: 6px;
+	padding: 18px;
+	background-color: white;
+	border: 1px solid #001158;
+	border-radius: 6px;
+	font-family: 'Roboto Condensed', sans-serif;
+	transition: background-color .6s;
+	overflow-y: auto;
 }
 
-.User h1{
-    text-align: center;
-    font-size: 1.8em;
-    color:#001158;
+.User h1 {
+	text-align: center;
+	font-size: 1.8em;
+	color: #001158;
+	margin-bottom: 1.2em;
 }
 
-
-.AddressParagraph{
-    height: 50px;
+.AddressParagraph {
+	height: 50px;
 }
 
-.User p{
-    margin-block-end: 0.5em;
-    margin-block-start: 0.5em;
+.User p {
+	margin-block-end: 0.5em;
+	margin-block-start: 0.5em;
 }
 
-.User span{
-    font-weight: 700;
+.User span {
+	font-weight: 700;
 }
 
 .User:hover {
-    background-color: #0055ff2e;
-  }
+	background-color: #0055ff2e;
+}

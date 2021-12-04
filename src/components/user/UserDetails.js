@@ -16,7 +16,6 @@ const UserDetails = ({ user }) => {
 				{checkIfOk(user.name.first)} {checkIfOk(user.name.last)}
 			</h1>
 
-			<br />
 			<p>
 				<span>Gender: </span>
 				{checkIfOk(user.gender)}

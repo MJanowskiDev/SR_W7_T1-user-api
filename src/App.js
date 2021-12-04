@@ -7,7 +7,7 @@ import Users from 'containers/Users';
 import SingleUser from 'containers/SingleUser';
 
 const usersCount = 50;
-const fetchDelay = 1000; //ms
+const fetchDelay = 2000; //ms
 
 function App() {
 	const [ usersData, setUsersData ] = useState([]);
@@ -46,7 +46,11 @@ function App() {
 	return (
 		<Router basename={process.env.PUBLIC_URL}>
 			<Routes>
-				<Route path="/" exact element={<Users usersData={usersData} loading={loading} usersCount={usersCount} />} />
+				<Route
+					path="/"
+					exact
+					element={<Users usersData={usersData} loading={loading} usersCount={usersCount} />}
+				/>
 				<Route path="/user/:id" element={<SingleUser />} />
 			</Routes>
 		</Router>

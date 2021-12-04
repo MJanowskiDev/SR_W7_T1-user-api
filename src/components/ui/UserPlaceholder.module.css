@@ -1,18 +1,20 @@
-
-.UserPlaceholder{
-    width: 350px;
-    height: 400px;
-    text-align: start;
-    margin: 6px;
-    padding: 18px;
-    background-color: white;
-    border: 1px solid #001158;
-    border-radius:6px;
+.UserPlaceholder {
+	width: 350px;
+	height: 400px;
+	text-align: start;
+	margin: 6px;
+	padding: 18px;
+	background-color: white;
+	border: 1px solid #001158;
+	border-radius: 6px;
 }
 
+.UserPortrait {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2em;
+}
 
-.UserPortrait{
-    margin-bottom: 16px;
-    display: flex;
-    justify-content: center;
+.UserRowsHeader {
+	margin-bottom: 4em;
 }
