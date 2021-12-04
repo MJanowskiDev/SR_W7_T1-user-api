@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { getUrl } from 'utils/user-utils';
+import { fetchUsers } from 'services/users';
 import './App.css';
 
 import Users from 'containers/Users';
 import SingleUser from 'containers/SingleUser';
 
 const usersCount = 50;
-const fetchDelay = 2000; //ms
+const fetchDelay = 1000; //ms
 
 function App() {
 	const [ usersData, setUsersData ] = useState([]);
@@ -16,16 +16,9 @@ function App() {
 
 	useEffect(() => {
 		setLoading(true);
-		const url = getUrl(usersCount);
+
 		const timeout = setTimeout(() => {
-			fetch(url)
-				.then((response) => {
-					if (!response.ok) {
-						throw new Error(`Error occured - status ${response.status}`);
-					} else {
-						return response.json();
-					}
-				})
+			fetchUsers(usersCount)
 				.then((data) => {
 					setUsersData(data.results);
 					setLoading(false);
